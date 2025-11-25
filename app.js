@@ -15,9 +15,8 @@ function cal(){
     }else{
         result="invalid operation";
     }
+    console.log("jkjkj")
     document.getElementById("output").innerHTML=result;
 
-    num1="";
-    num2="";
-    operation="";
+     
 }

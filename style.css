@@ -1,0 +1,94 @@
+/* Basic Reset and Font Setup */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6; /* Light, calming background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Calculator Container - Card Style */
+.calculator-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+/* Input Group Styling */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block; /* Make label take up full width */
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Include padding in element's total width/height */
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+  outline: none; /* Remove default browser focus outline */
+}
+
+/* Button Styling */
+.calculate-btn {
+  background-color: #007bff; /* Primary color blue */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.calculate-btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.calculate-btn:active {
+  transform: translateY(1px); /* Little press effect */
+}
+
+/* Output Paragraph Styling */
+#output {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #e9ecef; /* Light gray background for output */
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #333;
+  min-height: 20px; /* Ensure visible even when empty */
+  text-align: center;
+} 
